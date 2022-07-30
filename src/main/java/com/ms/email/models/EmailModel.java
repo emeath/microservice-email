@@ -1,12 +1,14 @@
 package com.ms.email.models;
 
 import com.ms.email.enums.StatusEmail;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
-
+@Data
 @Entity
+@Table(name = "TB_EMAILS")
 public class EmailModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
